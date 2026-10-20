@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#133f4a">
+<title>泡泡龙 · 放学后游戏室</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='5' y='8' width='54' height='40' rx='8' fill='%23e5dcc7'/%3E%3Crect x='12' y='15' width='40' height='25' rx='3' fill='%23133f4a'/%3E%3Cpath d='M25 25h14m-7-7v14' stroke='%23edbd65' stroke-width='4'/%3E%3Cpath d='M25 49v6h14v-6M16 57h32' stroke='%23e5dcc7' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body data-default-game="bubble">
+<div class="desktop">
+ <header class="brand"><div class="brand-mark">⌘</div><div><span class="eyebrow">AFTER SCHOOL / 2001</span><h1>放学后游戏室<span>再玩一局，就回家。</span></h1></div><span class="live-light">不用登录的小时光</span></header>
+ <main class="window">
+  <header class="titlebar"><span class="window-icon">▧</span><strong id="window-title">我的游戏收藏</strong><span id="clock"></span><button id="sound" aria-label="打开声音" title="打开声音">♪ 关</button><button id="home" aria-label="返回游戏收藏">⌂</button><button id="fullscreen" aria-label="全屏游戏">⛶</button></header>
+  <section id="menu">
+   <div class="menu-intro"><span class="eyebrow">THREE LITTLE WORLDS</span><h2>今天，玩点什么？</h2><p>没有课表，没有倒计时。只有你和一台旧电脑。</p></div>
+   <div class="game-grid">
+    <button class="game-card orbit" data-game="pinball"><div class="cover"><div class="orbit-ring"></div><span class="orb one"></span><span class="orb two"></span><span class="orb three"></span><i class="mini-flipper a"></i><i class="mini-flipper b"></i><span class="cover-number">01</span><b>ORBIT<br>PINBALL</b></div><div class="card-copy"><span>弹珠台</span><small>发射、反弹，再来一次。</small><em>进入游戏 ↗</em></div></button>
+    <button class="game-card cards" data-game="spider"><div class="cover"><span class="paper p1">K<span>♠</span></span><span class="paper p2">Q<span>♠</span></span><span class="paper p3">J<span>♠</span></span><span class="cover-number">02</span></div><div class="card-copy"><span>蜘蛛纸牌</span><small>一副好耐心，八组小胜利。</small><em>进入游戏 ↗</em></div></button>
+    <button class="game-card bubbles" data-game="bubble"><div class="cover"><span class="bubble-icon b1"></span><span class="bubble-icon b2"></span><span class="bubble-icon b3"></span><span class="bubble-icon b4"></span><span class="bubble-icon b5"></span><span class="cover-number">03</span><b>BUBBLE<br>PARADE</b></div><div class="card-copy"><span>泡泡龙</span><small>瞄准一颗，落下一整片。</small><em>进入游戏 ↗</em></div></button>
+   </div>
+   <div class="menu-note"><span class="pixel-dot"></span>键盘、鼠标和触屏都可以。最高分会留在这台浏览器里。</div>
+  </section>
+  <section id="play" hidden><div class="gamebar"><div id="game-name"></div><div id="stats" aria-live="polite"></div><button id="help-toggle" aria-label="游戏说明">?</button><button id="restart">重来</button></div><div id="help" hidden></div><div id="game-area"></div><div id="controls"></div><div id="status" role="status"></div></section>
+  <footer class="window-footer"><span><i class="pixel-dot"></i> 已就绪</span><span id="footer-note">一台电脑，三个小世界。</span><span>© AFTER SCHOOL</span></footer>
+ </main>
+ <footer class="desk-footer"><span>把快乐留在这台电脑里。</span><span>NO DOWNLOAD · NO SIGN IN</span></footer>
+</div>
+<script type="module" src="./app.mjs"></script>
+</body></html>
